@@ -21,7 +21,10 @@ class GameScreen extends StatelessWidget {
                   style: TextStyle(color: Colors.white),
                 ),
                 onPressed: () {
-                  Navigator.popUntil(context, (route) => route.isFirst);
+                  Navigator.popUntil(
+                    context,
+                    (route) => route.isFirst,
+                  );
                 },
               ),
             )

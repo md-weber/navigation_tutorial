@@ -1,6 +1,15 @@
-# landing_page
+# Flutter Explained: Navigation Tutorial
 
-This is a landing page for #FlutterExplained
+The Navigation Tutorial for Flutter Explained.
+
+[Video on Youtube]()
+
+
+
+## Special Thanks
+Thanks to Photo by [Alexander Andrews](https://unsplash.com/@alex_andrews?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplashed](https://unsplash.com/photos/4JdvOwrVzfY)
+
+[Undraw.co](https://undraw.co/) - For the illustrations
 
 ## Getting Started
 
