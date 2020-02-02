@@ -15,30 +15,28 @@ class LobbyScreen extends StatelessWidget {
           Flexible(
             child: Image.asset("assets/undraw.co/arrived.png"),
           ),
-          Expanded(
-            child: Container(
-              child: Card(
-                child: Column(
-                  children: <Widget>[
-                    Text(
-                      "Wait here till your friends arrive!",
-                      style: GoogleFonts.sawarabiGothic(fontSize: 62.0),
-                      textAlign: TextAlign.center,
+          Container(
+            child: Card(
+              child: Column(
+                children: <Widget>[
+                  Text(
+                    "Wait here till your friends arrive!",
+                    style: GoogleFonts.sawarabiGothic(fontSize: 42.0),
+                    textAlign: TextAlign.center,
+                  ),
+                  RaisedButton(
+                    color: Colors.blue,
+                    onPressed: () {
+                      Navigator.push(context, MaterialPageRoute(
+                        builder: (context) => GameScreen()
+                      ));
+                    },
+                    child: Text(
+                      "Start the game!",
+                      style: TextStyle(color: Colors.white),
                     ),
-                    RaisedButton(
-                      color: Colors.blue,
-                      onPressed: () {
-                        Navigator.push(context, MaterialPageRoute(
-                          builder: (context) => GameScreen()
-                        ));
-                      },
-                      child: Text(
-                        "Start the game!",
-                        style: TextStyle(color: Colors.white),
-                      ),
-                    )
-                  ],
-                ),
+                  )
+                ],
               ),
             ),
           )
