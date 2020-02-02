@@ -2,46 +2,29 @@ import 'package:flutter/material.dart';
 import 'package:landing_page/screens/lobby_screen.dart';
 
 class LoginScreen extends StatelessWidget {
-  final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text("Login Screen"),
       ),
-      body: Column(
-        children: <Widget>[
-          Flexible(
-            child: Image.asset("assets/undraw.co/mobile_login.png"),
-          ),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Card(
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Form(
-                  key: _formKey,
+      body: Container(
+        child: Column(
+          children: <Widget>[
+            Flexible(child: Image.asset("assets/undraw.co/mobile_login.png")),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Card(
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
                   child: Column(
                     children: <Widget>[
-                      TextFormField(
+                      TextField(
                         decoration: InputDecoration(hintText: "Username"),
-                        validator: (value) {
-                          if (value == "") return "Please fix Username.";
-                          return null;
-                        },
                       ),
                       SizedBox(height: 10),
-                      TextFormField(
+                      TextField(
                         decoration: InputDecoration(hintText: "Password"),
-                        validator: (value) {
-                          print(value);
-                          if (value == "") {
-                            return "Please fix Password.";
-                          }
-
-                          return null;
-                        },
                       ),
                       SizedBox(height: 30),
                       Container(
@@ -54,17 +37,13 @@ class LoginScreen extends StatelessWidget {
                             ),
                           ),
                           onPressed: () {
-                            if (_formKey.currentState.validate()) {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (BuildContext context) =>
-                                      LobbyScreen(),
-                                ),
-                              );
-                            } else {
-                              print("Form is not valid!");
-                            }
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (BuildContext context) =>
+                                    LobbyScreen(),
+                              ),
+                            );
                           },
                           color: Colors.blue,
                         ),
@@ -73,9 +52,9 @@ class LoginScreen extends StatelessWidget {
                   ),
                 ),
               ),
-            ),
-          )
-        ],
+            )
+          ],
+        ),
       ),
     );
   }

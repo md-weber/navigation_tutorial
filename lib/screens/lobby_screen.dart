@@ -21,7 +21,7 @@ class LobbyScreen extends StatelessWidget {
                 children: <Widget>[
                   Text(
                     "Wait here till your friends arrive!",
-                    style: GoogleFonts.sawarabiGothic(fontSize: 42.0),
+                    style: GoogleFonts.sawarabiGothic(fontSize: 62.0),
                     textAlign: TextAlign.center,
                   ),
                   RaisedButton(
