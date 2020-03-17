@@ -9,9 +9,9 @@ class GameScreen extends StatelessWidget {
         ),
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
-            Image.asset("assets/undraw.co/cards.png"),
+            Flexible(child: Image.asset("assets/undraw.co/cards.png")),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: RaisedButton(
