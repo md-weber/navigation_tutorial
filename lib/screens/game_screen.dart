@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 class GameScreen extends StatelessWidget {
   static String route = "game";
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

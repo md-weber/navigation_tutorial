@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData.light(),
       initialRoute: LoginScreen.route,
-      routes: getRouteMap(),
+      routes: getRoutes(),
     );
   }
 }

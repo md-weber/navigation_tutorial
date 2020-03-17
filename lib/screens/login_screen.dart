@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:landing_page/screens/lobby_screen.dart';
 
 class LoginScreen extends StatelessWidget {
-  static String route = "login_screen_new";
-
+  static String route = "login";
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,7 +39,7 @@ class LoginScreen extends StatelessWidget {
                           ),
                           onPressed: () {
                             Navigator.pushNamed(context, LobbyScreen.route);
-                          },
+                           },
                           color: Colors.blue,
                         ),
                       )
