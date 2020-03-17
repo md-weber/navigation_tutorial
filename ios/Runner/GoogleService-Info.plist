@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>64510611005-o1td5gcdv9ki7km7lgg1e2jvb5f5600b.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.64510611005-o1td5gcdv9ki7km7lgg1e2jvb5f5600b</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBHX28a-_RA2Zf4m02w_MgGrfMlD8agbv8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>64510611005</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>de.myracledesign.landingPage</string>
+	<key>PROJECT_ID</key>
+	<string>loginauthenticationtutorial</string>
+	<key>STORAGE_BUCKET</key>
+	<string>loginauthenticationtutorial.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:64510611005:ios:1a905bff9ee5d66ba9e454</string>
+	<key>DATABASE_URL</key>
+	<string>https://loginauthenticationtutorial.firebaseio.com</string>
+</dict>
+</plist>
