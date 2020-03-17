@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:landing_page/routes.dart';
 import 'package:landing_page/screens/login_screen.dart';
 
 void main() => runApp(MyApp());
@@ -10,7 +11,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData.light(),
-      home: LoginScreen(),
+      initialRoute: LoginScreen.route,
+      routes: getRouteMap(),
     );
   }
 }

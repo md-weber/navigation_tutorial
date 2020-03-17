@@ -3,6 +3,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:landing_page/screens/game_screen.dart';
 
 class LobbyScreen extends StatelessWidget {
+  static String route = "lobby";
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,9 +29,7 @@ class LobbyScreen extends StatelessWidget {
                   RaisedButton(
                     color: Colors.blue,
                     onPressed: () {
-                      Navigator.push(context, MaterialPageRoute(
-                        builder: (context) => GameScreen()
-                      ));
+                      Navigator.pushNamed(context, GameScreen.route);
                     },
                     child: Text(
                       "Start the game!",

@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:landing_page/screens/lobby_screen.dart';
 
 class LoginScreen extends StatelessWidget {
+  static String route = "login_screen_new";
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,13 +39,7 @@ class LoginScreen extends StatelessWidget {
                             ),
                           ),
                           onPressed: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (BuildContext context) =>
-                                    LobbyScreen(),
-                              ),
-                            );
+                            Navigator.pushNamed(context, LobbyScreen.route);
                           },
                           color: Colors.blue,
                         ),
